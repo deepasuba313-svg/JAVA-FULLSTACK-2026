@@ -1,9 +1,28 @@
-#greeting p{
-    background-color: aquamarine;
-    padding: 10px;
-    display: none;
+h1::first-letter{
+    font-size: 2em;
 }
 
-#greeting:hover p{
-    display: block;
+p::first-line{
+    background-color: blueviolet;
+}
+
+p::selection{
+    background-color: rgb(221, 149, 62);
+    color: rgb(17, 35, 29);
+}
+
+#fruits li::before{
+    content: "👍";
+}
+
+#apple::after{
+    content: "🍏";
+}
+
+#orange::after{
+    content: "🍊";
+}
+
+#banana::after{
+    content: "🍌";
 }
